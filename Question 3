@@ -1,0 +1,25 @@
+count = 0
+total = 0
+
+while True:
+    user_input = input("Enter a number or 'done' to finish: ")
+
+    if user_input.lower() == 'done':
+        break
+
+    try:
+        number = float(user_input)
+    except ValueError:
+        print("Invalid input. Please enter a numeric value or 'done'.")
+        continue
+
+    count += 1
+    total += number
+
+if count > 0:
+    average = total / count
+    print(f"Count: {count}")
+    print(f"Total: {total}")
+    print(f"Average: {average:.2f}")
+else:
+    print("No numbers entered.")
