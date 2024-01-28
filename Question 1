@@ -12,3 +12,4 @@ else:
 
     print(f"Total salary: ${salary:.2f}")
 
+
