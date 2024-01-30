@@ -19,3 +19,4 @@ else:
     else:
         print("Error: Score is out of range (0-100).")
 
+
